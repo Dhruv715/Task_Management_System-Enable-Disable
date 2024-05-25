@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Side Dashboard</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+         table{
+            margin: 10px auto;
+            width: 70vw;
+            background-color: gray;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px 20px;
+            border: 2px solid white;
+        }
+        td a{
+            padding: 10px 20px;
+            background-color: black;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <a href="/">Logout</a>
+    <table>
+        <thead>
+            <tr>
+                <!-- <th>No</th> -->
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% result.forEach(function(data){ %>
+            <tr>
+                <!-- <td><%= data.tid %></td> -->
+                <td><%= data.taskname %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

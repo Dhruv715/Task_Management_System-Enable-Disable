@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 30vw;
+            margin: 10vh auto;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .box form div{
+            margin: 10px 0px;
+        }
+        .box form div input{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form method="post">
+            <h1>Admin Login</h1>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Email Here..">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Password Here..">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
